@@ -21,7 +21,7 @@ from prediction.views import predict_price
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('predict/', predict_price,),
-    
+    path('', predict_price,),
 
 
 ]
