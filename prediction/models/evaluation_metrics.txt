@@ -1,0 +1,5 @@
+Mean Squared Error (MSE): 0.0840629197427191
+Root Mean Squared Error (RMSE): 0.28993606147342055
+R-squared (R²): 0.031953015669373586
+Adjusted R-squared: -0.313778050162993
+Root Mean Squared Logarithmic Error (RMSLE): 0.1966816096250701

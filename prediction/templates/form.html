@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Price Prediction Form</title>
+</head>
+
+<body>
+    <h2>Enter Features for Price Prediction</h2>
+
+    {% if error %}
+    <p style="color:red;">Error: {{ error }}</p>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        {% for i in feature_range %}
+        <label for="feature{{ i }}">Feature {{ i }}:</label>
+        <input type="text" name="feature{{ i }}" required><br><br>
+        {% endfor %}
+        <button type="submit">Predict</button>
+    </form>
+</body>
+
+</html>
